@@ -15,11 +15,13 @@ html, body, .container {
 
 .moving-platypus {
     position: fixed; 
-    top: 150px;
-    left: 50px;
+    top: calc(100vh * 0.15);
+    left: calc(100vw * 0.1);
 
     transform: 
         rotate(0deg);
+
+    z-index: 10;
 }
 
 .moving-platypus-img {
@@ -31,7 +33,7 @@ html, body, .container {
         translateX(-50%)
         translateY(-50%); 
 
-    filter: drop-shadow(5px 5px 5px #A9A9A9);
+    filter: drop-shadow(-5px 5px 5px #A9A9A9);
 }
 
 .container, .section{
@@ -48,10 +50,16 @@ html, body, .container {
 
     margin: 0;
     padding: 0;
+
+    z-index: 1;
 }
 
 .headingSection .title {
     font-size: 4rem;
+}
+
+.headingSection .subTitle {
+    margin-top: 5px;
 }
 
 .headingSection .title-light {
@@ -61,6 +69,7 @@ html, body, .container {
 
 .headingSection .buttons {
     margin-top: 10px;
+    gap: 20px;
     /*background-color: red;*/
 }
 
@@ -72,6 +81,11 @@ html, body, .container {
 
     border: 1.5px solid #000000;
     border-radius: 0.5rem;
+}
+
+.headingButtonsLight {
+    font-weight: 200;
+    color: #606060;
 }
 
 /*
