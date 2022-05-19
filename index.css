@@ -14,26 +14,45 @@ html, body, .container {
 }
 
 .moving-platypus {
-    position: fixed; 
-    top: calc(100vh * 0.15);
-    left: calc(100vw * -0.05);
+    width: 250px;
+    height: 115px;
 
+
+    /*
     transform: 
         rotate(30deg);
+    */
 
     z-index: 10;
+
+    background-color: red;
 }
 
 .moving-platypus-img {
-    width: 250px;
-    height: 115px;
+    width: 260px;
+    height: 120px;
     image-rendering: pixelated;
 
+
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+
+    
     transform:  
         translateX(-50%)
-        translateY(-50%); 
+        translateY(-50%)
+        scaleX(1)
+        rotate(45deg); 
+
+    /*transform-origin: 50% 50%;*/
+    /*background-position: center;*/
 
     filter: drop-shadow(-5px 5px 2px #6a6969);
+
+    /*
+    background-color: blue;
+    */
 }
 
 .container, .section{
