@@ -16,10 +16,10 @@ html, body, .container {
 .moving-platypus {
     position: fixed; 
     top: calc(100vh * 0.15);
-    left: calc(100vw * 0.1);
+    left: calc(100vw * -0.05);
 
     transform: 
-        rotate(0deg);
+        rotate(30deg);
 
     z-index: 10;
 }
@@ -33,7 +33,7 @@ html, body, .container {
         translateX(-50%)
         translateY(-50%); 
 
-    filter: drop-shadow(-5px 5px 5px #A9A9A9);
+    filter: drop-shadow(-5px 5px 2px #6a6969);
 }
 
 .container, .section{
