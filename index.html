@@ -8,27 +8,64 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="moving-platypu" id="moving-platypus">
-    </div>
-    <img src="./assets/platypus.png" alt="" srcset="" class="moving-platypus-img" id="moving-platypus-img">
+    <img src="./assets/platypus.png" alt="" srcset="" class="moving-platypus-img defaultLoc pixelated" id="moving-platypus-img">
     <div class="container">
         <div class="headingSection section">
             <div class="title"><span class="title-light">The </span>Platypus</div>
             <div class="subTitle">An Amazing Animal.</div>
             <div class="buttons">
-                <button class="headingButtons" onclick="window.location.href = '/rotation.html'"><span class="headingButtonsLight">The</span> Rotation Theory</button>
-                <button class="headingButtons" onclick="window.location.href = '/rotation.html'"><span class="headingButtonsLight">The</span> Milk Theory</button>
+                <button class="headingButtons" onclick="window.location.href = '/#differences'"><span class="headingButtonsLight">The</span> Differences</button>
+                <button class="headingButtons" onclick="window.location.href = '/#milk'"><span class="headingButtonsLight">The</span> Milk Theory</button>
+                <button class="headingButtons" onclick="window.location.href = '/#rotation'"><span class="headingButtonsLight">The</span> Rotation Theory</button>
+            </div>
+            <!-- <i class="fa-thin fa-angle-down" id="arrowdown"></i> -->
+        </div>
+        <div class="differencesSection section" id="differences">
+            <div class="title"><span class="title-light">The</span> Differences</div>
+
+            <div class="split">
+                <div class="left side">
+                    <div class="smallTitle">Platypus</div>
+                    <img src="./assets/platypus_no_hat.png" alt="" srcset="" class="pixelated">
+                    <ul class="list">
+                        <li>No Hat</li>
+                        <li>Not Named Perry</li>
+                        <li>Sweats Milk</li>
+                    </ul>
+                </div>
+                <div class="centerDivider"></div>
+                <div class="right side">
+                    <div class="smallTitle">Perry the Platypus</div>
+                    <img src="./assets/platypus.png" alt="" srcset="" class="pixelated">
+                    <ul class="list">
+                        <li>Has Hat</li>
+                        <li>Named Perry</li>
+                        <li>Doo Bee Doo Bee Doo Bah</li>
+                    </ul>
+                </div>  
             </div>
         </div>
-        
-        <!--Title: Different Types
-        
-        Middle Line
-        Left Platypus Pixelart
-        Right Platypus with hat Pixelart
-    
-        Titles Accordingly-->
+        <div class="milkSection section" id="milk">
+            <div class="title"><span class="title-light">The</span> Milk Theory</div>
+            <!-- <div class="subTitle">Platypuses sweat Milk. <br>We collect Milk<br>We sell Milk<br>We make Monies</div> -->
+            <div class="milk">
+                <img src="./assets/platypus_milk.png" alt="" srcset="" class="pixelated">
+                <ul class="list">
+                    <li>Step 1: Platypus sweat Milk</li>
+                    <li>Step 2: Collect Milk</li>
+                    <li>Step 3: ???</li>
+                    <li>Step 4: Big Profit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rotationSection section" id="rotation">
+            <div class="title"><span class="title-light">The</span> Rotation Theory</div>
+            <div class="rotation">
+                <img src="./assets/platypus_silhouette.png" alt="Platypus Silhouette" class="rotationImg" id="rotationImg">
+            </div>
+        </div>
     </div>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/f1fb2ce3a8.js" crossorigin="anonymous"></script>
 </body>
 </html>

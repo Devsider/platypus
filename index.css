@@ -11,39 +11,51 @@ html, body, .container {
     color: #000000;
 
     font-family: 'Montserrat', sans-serif;
+    
+    scroll-behavior: smooth;
 }
 
-.moving-platypus {
-    width: 250px;
-    height: 115px;
+/* ScrollBar */
 
 
-    /*
-    transform: 
-        rotate(30deg);
-    */
-
+::-webkit-scrollbar {
+    width: 8px;
+    
     z-index: 10;
+}
 
-    background-color: red;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* PLatypus */
+
+.pixelated {
+    image-rendering: pixelated;
 }
 
 .moving-platypus-img {
     width: 260px;
     height: 120px;
-    image-rendering: pixelated;
-
 
     position: fixed; 
-    top: 0px;
-    left: 0px;
-
     
     transform:  
         translateX(-50%)
         translateY(-50%)
         scaleX(1)
-        rotate(45deg); 
+        rotate(45deg);
 
     /*transform-origin: 50% 50%;*/
     /*background-position: center;*/
@@ -55,12 +67,32 @@ html, body, .container {
     */
 }
 
+.moving-platypus-img .defaultoc {
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+}
+
 .container, .section{
     /*background-color: red;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.section {
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
 .headingSection {
@@ -105,6 +137,175 @@ html, body, .container {
 .headingButtonsLight {
     font-weight: 200;
     color: #606060;
+}
+
+/* The Differences */
+
+.differencesSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.differencesSection .title {
+    font-size: 4rem;
+}
+
+.differencesSection .smallTitle {
+    margin-top: 5px;
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.differencesSection .title-light {
+    font-weight: 100;
+    color: #696969;
+}
+
+.differencesSection .split {
+    width: 95%;
+    height: 35%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    margin-top: 15px;
+    
+    /* background-color: red; */
+}
+
+.side {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.differencesSection .split .centerDivider {
+    width: 1px;
+    height: 95%;
+
+    background-color: #000000;
+}
+
+/* Mediaquery for Smartphone */
+@media only screen and (max-width: 600px) {
+    .differencesSection {
+        justify-content: center;
+    }
+
+    .differencesSection .title {
+        font-size: 3rem;
+    }
+
+    .differencesSection .split {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        margin-top: 0;
+
+        width: 100%;
+        height: 80%;
+
+        margin: 0px;
+    }
+    
+    .differencesSection .side {
+        /* background-color: red; */
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .differencesSection .split .centerDivider { 
+        width: 95%;
+        height: 1px;
+    }
+
+}
+
+.differencesSection .split img {
+    width: 260px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.differencesSection .split .list {
+    font-size: 1.1rem;
+    list-style-type: circle;
+}
+
+
+/* The Milk Theory */
+
+.milkSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.milkSection .title {
+    font-size: 4rem;
+}
+
+.milkSection .subTitle {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.milkSection .title-light {
+    font-weight: 100;
+    color: #696969;
+}
+
+.milkSection .milk {
+
+}
+
+.milkSection img {
+    width: calc(90px * 4);
+    height: calc(70px * 4);
+    margin-top: 20px;
+}
+
+.milkSection .list {
+    font-size: 1.1rem;
+    list-style-type: circle;
+}
+
+
+/* The Rotation Theory */
+
+.rotationSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rotationSection .title {
+    font-size: 4rem;
+}
+
+.rotationSection .subTitle {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.rotationSection .title-light {
+    font-weight: 100;
+    color: #696969;
 }
 
 /*
