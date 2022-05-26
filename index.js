@@ -10,9 +10,9 @@ let positions = [
     [0, -100, true, true, -45, true, 1],
     [-100, 200, true, false, -45, true, 2],
     [-100, 200, true, false, -45, true, 1],
-    [0, 0, false, false, 45, false, 1],
+    [70, 0, false, false, 45, false, 1],
     [50, 0, false, false, 45, false, 1],
-    [70, 0, false, false, 45, false, 1]
+    [0, 0, false, false, 45, false, 5]
 ];
 
 let timings = [
