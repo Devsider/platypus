@@ -294,6 +294,37 @@ html, body, .container {
     flex-direction: column;
 }
 
+.rotationSection .slide {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#rotarySection-slide-1 {
+    background-color: rebeccapurple;   
+}
+
+.rotationSection .rotation {
+    background-color: blue;
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.rotationSection .text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 60%;
+
+    background-color: red;
+}
+
 .rotationSection .title {
     font-size: 4rem;
 }
@@ -306,6 +337,32 @@ html, body, .container {
 .rotationSection .title-light {
     font-weight: 100;
     color: #696969;
+}
+
+.rotationSection img {
+    width: 260px;
+    height: 120px;
+}
+
+
+.rotationSection .controls {
+    width: 100%;
+    height: 20px;
+
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rotationSection .controls i {
+    width: 20px;
+    height: 20px;
+
+    fill: #000000;
+    color: #000000;
 }
 
 /*
